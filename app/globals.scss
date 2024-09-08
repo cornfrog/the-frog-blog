@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/rem');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 1rem auto;
+  background-color: grey;
+  color: white;
+  font-family: 'REM', sans-serif;
+  width: 75%;
+  /* border: 1px solid white; */
+}
+
+.hide {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    width: 95%;
+  }
+}

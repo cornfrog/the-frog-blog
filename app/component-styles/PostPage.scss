@@ -1,0 +1,16 @@
+.post-page {
+  margin: 0 auto;
+  width: 60%;
+}
+
+@media (min-width: 600px) and (max-width: 860px) {
+  .post-page {
+    width: 85%;
+  } 
+}
+
+@media (max-width: 600px) {
+  .post-page {
+    width: 95%;
+  } 
+}

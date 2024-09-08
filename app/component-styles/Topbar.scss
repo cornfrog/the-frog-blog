@@ -1,0 +1,78 @@
+@import url('https://fonts.cdnfonts.com/css/terminal');
+@import url('https://fonts.cdnfonts.com/css/rem');
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__name-and-logo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    &__logo {
+      height: 150px;
+      width: 150px;
+    }
+
+    &__name {
+      font-family: 'Terminal', sans-serif;
+      font-size: 4rem;
+      margin: 0;
+    }
+  }
+  
+  &__menu {
+    width: 75%;
+
+    &__list {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__link {
+        font-family: 'REM', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: .5rem 1.5rem;
+        transition: background-color .25s ease-in-out;
+        border-radius: 1rem;
+      }
+
+      &__link:hover {
+        background-color: limegreen;
+      }
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    &__name-and-logo {
+
+      &__logo {
+        height: 125px;
+        width: 125px;
+      }
+
+      &__name {
+        font-size: 3rem;
+      }
+    }
+
+    &__menu {
+      margin-top: .5rem;
+    }
+  }
+}

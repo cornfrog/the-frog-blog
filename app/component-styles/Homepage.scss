@@ -1,0 +1,58 @@
+.homepage {
+  padding: 1rem;
+
+  &__message-of-the-day {
+    padding: 1.75rem;
+    margin: 0 auto;
+    background-color: #505050;
+    width: 65%;
+    text-align: center;
+
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
+
+  h2{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+  }
+
+  &__message {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.25rem;
+  } 
+}
+
+@media (min-width: 600px) and (max-width: 860px) {
+  .homepage {
+    margin: 0 auto;
+    width: 85%;
+  } 
+}
+
+@media (max-width: 600px) {
+  .homepage {
+
+    &__message-of-the-day {
+      padding: 1.25rem;
+      margin: 0 auto;
+      background-color: #505050;
+      width: 75%;
+      text-align: center;
+
+      &__text {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__message {
+      width: 95%;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+}

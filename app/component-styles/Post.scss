@@ -1,0 +1,102 @@
+.login-form {
+  margin: 3rem auto;
+  background-color: #505050;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 50vh;
+
+  &__label {
+    font-size: 1.25rem;
+
+    &__input {
+      font-size: 1.25rem;
+      margin-left: 1rem;
+    }
+  }
+
+  #login-button {
+    padding: .5rem 1.5rem;
+    font-size: 1.25rem;
+    background-color: limegreen;
+    border: .25rem solid white;
+    color: white;
+    border-radius: 1rem;
+  }
+}
+
+.post-form {
+  margin: 3rem auto;
+  background-color: #505050;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 60vh;
+
+  &__post-label {
+    font-size: 1.25rem;
+
+    &__input {
+      font-size: 1.25rem;
+      margin-left: 1rem;
+    }
+  }
+
+  #post-content {
+    width: 80%;
+    resize: none;
+    height: 25vh;
+    font-size: 1.25rem;
+  }
+
+  #post-button {
+    padding: .5rem 1.5rem;
+    font-size: 1.25rem;
+    background-color: limegreen;
+    border: .25rem solid white;
+    color: white;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-form {
+    width: 95%;
+
+    &__label {
+      font-size: 1.15rem;
+
+      &__input {
+        font-size: 1.15rem;
+        margin-left: 1rem;
+      }
+    }
+
+    #login-button {
+      font-size: 1.15rem;
+    }
+
+  }
+
+  .post-form {
+    width: 99%;
+
+    &__post-label {
+      font-size: 1.15rem;
+
+      &__input {
+        font-size: 1.15rem;
+        margin-left: 1rem;
+      }
+    }
+
+    #login-button {
+      font-size: 1.15rem;
+    }
+
+  }
+}
