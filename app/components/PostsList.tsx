@@ -18,7 +18,7 @@ const PostsList = ({limit}: PostListProps) => {
   }
 
   const postsList = posts
-  .sort((a: any, b: any) => b.created - a.created)
+  .sort((a: Post, b: Post) => b.created - a.created)
   .slice(0, listLimit)
   .map((post: Post, index: number) => {
     return <PostTile post={post} key={index} />
