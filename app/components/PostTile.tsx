@@ -1,7 +1,12 @@
 import "../component-styles/Posts.scss";
+import { Post } from "../types";
+
+interface PostTileProps {
+  post: Post
+}
 
 
-const PostTile = ({post}: any) => {
+const PostTile = ({post}: PostTileProps) => {
 
   const postDateAsString = new Date(post.created).toLocaleDateString();
 

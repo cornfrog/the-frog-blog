@@ -16,10 +16,15 @@ const PostPage = () => {
   );
 }
 
-const LoginForm = ({isLoggedIn, setLoggedInState}: any) => {
+interface LoginFormProps {
+  isLoggedIn: boolean;
+  setLoggedInState: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const LoginForm = ({isLoggedIn, setLoggedInState}: LoginFormProps) => {
 
 
-  const login = async (event: any) => {
+  const login = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const response = await fetch("/api/validate", {
@@ -52,14 +57,17 @@ const LoginForm = ({isLoggedIn, setLoggedInState}: any) => {
 }
 
 const PostForm = () => {
-  const postBlog = async (event: any) => {
+  const postBlog = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const postData = new FormData(event.currentTarget) 
-    console.log(postData);
     const response = await fetch("/api/post-blog", {
       method: "POST",
       body: postData
     });
+    const responseData = await response.json();
+    if(responseData.error) {
+      console.log(responseData.error)
+    }
   }
 
   return (

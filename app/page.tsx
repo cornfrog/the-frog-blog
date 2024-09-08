@@ -15,7 +15,7 @@ export default function Home() {
           Hello and welcome to The Frog Blog!
         </p>
         <p>
-          Here, you'll find updates on my ongoing projects
+          Here, you&apos;ll find updates on my ongoing projects
           and explore various topics related to technology.
           Whether you’re here for project insights or tech
           discussions, I hope you find something that piques

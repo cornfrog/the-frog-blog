@@ -1,8 +1,13 @@
 import { posts } from "@/app/posts";
 import { marked } from "marked";
 import "../../component-styles/PostPage.scss";
+import { Post } from "@/app/types";
 
-const PostPage = ({params}: any) => {
+interface PostPageProps {
+  params: Post
+}
+
+const PostPage = ({params}: PostPageProps) => {
 
   const postToRender = posts.find(post => post.id === Number(params.id));
 

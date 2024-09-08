@@ -1,8 +1,13 @@
 import { posts } from "../posts";
 import PostTile from "./PostTile";
 import "../component-styles/Posts.scss";
+import { Post } from "../types";
 
-const PostsList = ({limit}: any) => {
+interface PostListProps {
+  limit?: number
+}
+
+const PostsList = ({limit}: PostListProps) => {
 
   let listLimit;
   
@@ -12,10 +17,10 @@ const PostsList = ({limit}: any) => {
     listLimit = posts.length;
   }
 
-  const postsList: any = posts
+  const postsList = posts
   .sort((a: any, b: any) => b.created - a.created)
   .slice(0, listLimit)
-  .map((post: any, index: number) => {
+  .map((post: Post, index: number) => {
     return <PostTile post={post} key={index} />
   });
 

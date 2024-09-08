@@ -14,7 +14,7 @@ const About = () => {
 
       <div className="about-page__message">
         <p >
-          Hi there, I'm cornfrog, and welcome to The Frog Blog!
+          Hi there, I&apos;m cornfrog, and welcome to The Frog Blog!
           I’m a full-time web developer with a background in IT
           as a helpdesk technician. I created this blog to share
           updates on my projects, my thoughts on various topics,
@@ -23,7 +23,7 @@ const About = () => {
         <p>
           Technology has always been a part of my life, and now
           I&apos;m excited to shift from being a lurker to making
-          meaningful contributions. Here, you'll find insights into
+          meaningful contributions. Here, you&apos;ll find insights into
           my work, my opinions on current trends, and some lighthearted
           content.
         </p>

@@ -1,1 +1,1 @@
-export const posts = [{"id":1,"title":"Hello World","subject":"My First Post!","created":1725763372463,"data":"## This is a post to get things started !\r\n"}];
+export const posts = [{"id":1,"title":"Hello World","subject":"My First Post!","created":1725763372463,"data":"## This is a post to get things started !\r\n"},{"id":2,"title":"Type Update","subject":"Added types so vercel would stop complaining....","created":1725766444679,"data":"yikes vercel does not like the `any` type lmao."}];
